@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Smoke" verbose="1" configfailurepolicy="continue">
+
+    <listeners>
+        <listener class-name="report.ExtentReportListener" />
+    </listeners>
+    <test name="Smoke">
+        <groups>
+            <run>
+                <include name="Smoke" />
+            </run>
+        </groups>
+
+        <classes>
+
+
+            <class name="master.plant.PlantTest"></class>
+            <class name="master.equipment.EquipmentTest"></class>
+            <class name="master.equipment.AddPlantEquipmentTest"></class>
+
+            <class name="master.Customer.CustomerTest"></class>
+            <class name="master.Customer.ProjectTest"></class>
+            <class name="master.Customer.DeliveryCycleTest"></class>
+
+
+            <class name="master.Supplier.SupplierTest"></class>
+            <class name="master.SupplierCatecory.SupplierCatecoryTest"></class>
+
+            <class name="master.Designation.DesignationTest"></class>
+            <class name="master.Role.RoleTest"></class>
+            <class name="master.employee.EmployeeTest"></class>
+            <class name="master.User.UserTest"></class>
+
+        </classes>
+    </test>
+</suite>
